@@ -2,7 +2,7 @@ import time
 import requests
 import json
 
-API_KEY = "9QT4831I3Y175GPSSAPAIXT8E1IKK84V1Y"
+API_KEY = "api_key"
 ADDRESS_FILE = "addressesPolygon.txt"
 OUTPUT_FILE = "PolygonContracts.json"
 API_LINK = "https://api.polygonscan.com/api"
