@@ -2,10 +2,10 @@ import requests
 import json
 import pandas as pd
 
-API_KEY = "MAEZYK7P4733NJHWDBMIH9QXVN2WG7DJI1"  
+API_KEY = "api_key"  
 BASE_URL = "https://api.bscscan.com/api"
 
-csv_file_path = 'F:/ITU/Semester 1/Blockchain/Project/Phase 2/verified-contract-address 1.csv'
+csv_file_path = 'verified-contract-address.csv'
 data = pd.read_csv(csv_file_path, header=1)
 contract_addresses = data.iloc[:, 1].tolist()  ## contract detailed are obtained from 2nd column of the csv file
 
@@ -44,14 +44,14 @@ for i, address in enumerate(contract_addresses[:3500]):
         print(f"Error processing contract at index {i}: {e}")
 
 
-output_file_part1 = 'F:/ITU/Semester 1/Blockchain/Project/Phase 2/contract_details_part1.json'
+output_file_part1 = 'contract_details_part1.json'
 with open(output_file_part1, 'w') as f:
     json.dump(contract_details_part1, f, indent=4)
 
 print(f"First half of contract details saved to {output_file_part1}")
 
 
-output_file_part2 = 'F:/ITU/Semester 1/Blockchain/Project/Phase 2/contract_details_part2.json'
+output_file_part2 = 'contract_details_part2.json'
 with open(output_file_part2, 'w') as f:
     json.dump(contract_details_part2, f, indent=4)
 
