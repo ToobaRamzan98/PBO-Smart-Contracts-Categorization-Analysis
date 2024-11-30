@@ -2,7 +2,7 @@ import time
 import requests
 import json
 
-API_KEY = "FVP7CPU4Y8FB1G5RIS3PE3JTH54HIJGE1X"
+API_KEY = "api_key"
 ADDRESS_FILE = "optimismSecondHalf.txt"
 OUTPUT_FILE = "OptimismContracts2.json"
 API_URL = "https://api-optimistic.etherscan.io/api"
